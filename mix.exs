@@ -12,7 +12,7 @@ defmodule Nerves.Lib.Mixfile do
   end
 
   def application, do: [
-    applications: []
+    applications: [],
     mod: {Nerves.Lib, []}
   ]
 

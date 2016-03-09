@@ -5,11 +5,10 @@ defmodule Nerves.Lib do
   # without having a full app structure for nerves_lib - @ghitchens
 
   use Application
-  import Supervisor.Spec, warn: false
-  @sup Nerves.Lib.Supervisor
+
   @doc false
   def start(_type, _args) do
-    Supervisor.start_link [], strategy: :one_for_one, name: @sup
+    {:ok, self}
   end
 
 end

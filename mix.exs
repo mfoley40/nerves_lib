@@ -10,7 +10,7 @@ defmodule NervesLib.Mixfile do
      deps: deps]
   end
 
-  def application, do [
+  def application, do: [
     applications: []
   ]
 

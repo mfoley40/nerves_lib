@@ -1,4 +1,5 @@
-defmodule NervesLib.Mixfile do
+defmodule Nerves.Lib.Mixfile do
+
   use Mix.Project
 
   def project do
@@ -12,9 +13,11 @@ defmodule NervesLib.Mixfile do
 
   def application, do: [
     applications: []
+    mod: {Nerves.Lib, []}
   ]
 
   defp deps do
     []
   end
+
 end

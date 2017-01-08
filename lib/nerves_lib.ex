@@ -8,7 +8,7 @@ defmodule Nerves.Lib do
 
   @doc false
   def start(_type, _args) do
-    {:ok, self}
+    {:ok, self()}
   end
 
 end

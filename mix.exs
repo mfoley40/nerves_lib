@@ -8,7 +8,6 @@ defmodule Nerves.Lib.Mixfile do
     [app: :nerves_lib,
      version: @version,
      elixir: "~> 1.2",
-     deps: deps(),
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]

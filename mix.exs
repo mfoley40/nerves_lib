@@ -1,20 +1,20 @@
 defmodule Nerves.Lib.Mixfile do
 
-  @version "0.1.1-dev"
+  @version "1.0.0"
 
   use Mix.Project
 
   def project do
     [app: :nerves_lib,
      version: @version,
-     elixir: "~> 1.2",
+     elixir: "~> 1.10",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      deps: deps()]
   end
 
   def application, do: [
-    applications: [],
+    applications: [:logger],
     mod: {Nerves.Lib, []}
   ]
 

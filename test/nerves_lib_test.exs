@@ -1,8 +1,12 @@
-defmodule NervesLibTest do
+defmodule Nerves.Lib.Test do
   use ExUnit.Case
-  doctest NervesLib
+  doctest Nerves.Lib.UUID
 
-  test "the truth" do
-    assert 1 + 1 == 2
+  test "start test" do
+    a = 1
+    b = 2
+    {result, pid} = Nerves.Lib.start(a, b)
+    assert result == :ok
+    assert is_pid(pid)
   end
 end

@@ -1,6 +1,6 @@
 # Nerves.Lib
 
-New project containing modules that provide common functionality used across
+Project containing modules that provide common functionality used across
 the Nerves project.
 
 ## Installation
